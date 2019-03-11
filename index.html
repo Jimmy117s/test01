@@ -1,0 +1,2052 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>项目首页</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div class="content_body">
+        <!--时间进度条-->
+        <div class="meeting-progress-bar">
+            <div class="meeting unscheduled-meeting" style="width: 30%;"><span class="start-time">00:00</span></div>
+            <div class="meeting unopened-meeting" style="width:8%;"><span class="start-time">08:30</span><span class="end-time">09:00</span></div>
+            <div class="meeting unscheduled-meeting" style="width:20%;"></div>
+            <div class="meeting unopened-meeting" style="width:20%;"><span class="start-time">14:00</span><span class="end-time">21:00</span></div>
+            <div class="meeting ongoing-meeting" style="width:22%;"></div>
+        </div>
+        <!--时间进度条 end-->
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--消息通知弹框-->
+        <div class="open-notice-popup">打开消息通知弹框
+            <div class="notice-popup">
+                <div class="notice-tab" id="notice-tab">
+                    <ul class="notice-tab-list">
+                        <li class="selected"><a href="#">通知(10)</a></li>
+                        <li class=""><a href="#">消息(0)</a></li>
+                        <li class=""><a href="#">待办(0)</a></li>
+                    </ul>
+                    <ul class="notice-tab-content">
+                        <li style="display: block;">
+                            <div class="notice-item-con">
+                                <div class="notice-item">
+                                    <dl>
+                                        <dt><i class="fa fa-envelope"></i></dt>
+                                        <dd>
+                                            <h3>你收到了10条新通知</h3>
+                                            <p>1小时前</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><i class="fa fa-envelope"></i></dt>
+                                        <dd>
+                                            <h3>你收到了10条新通知</h3>
+                                            <p>1小时前</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><i class="fa fa-envelope"></i></dt>
+                                        <dd>
+                                            <h3>你收到了10条新通知</h3>
+                                            <p>1小时前</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><i class="fa fa-envelope"></i></dt>
+                                        <dd>
+                                            <h3>你收到了10条新通知</h3>
+                                            <p>1小时前</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><i class="fa fa-envelope"></i></dt>
+                                        <dd>
+                                            <h3>你收到了10条新通知</h3>
+                                            <p>1小时前</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="notice-clear">清空 通知</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="notice-nothing">
+                                <i class="fa fa-bell-o"></i>
+                                <p>您已查看所有消息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="notice-nothing">
+                                <i class="fa fa-bell-o"></i>
+                                <p>您完成所有待办</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--消息通知弹框 end-->
+        
+        <!--打卡-->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="modal attendance-card">
+            <h3><i class="fa fa-clock-o fa-fw"></i>考勤打卡<a href="#" class="close"><i class="fa fa-close fa-fw"></i></a></h3>
+            <div class="modal-content">
+                <div class="clock-button"> <a href="#" class="button-orange">上班打卡<span>09:00:00</span></a><a href="#">下班打卡<span>18:15:00</span></a></div>
+                <div class="current-time">当前时间：2018/9/4 上午10:13:30</div>
+            </div>
+        </div>
+
+        <!--审批状态-->
+        <div class="approval_state">
+            <div class="state_star_first">
+                <p>启动</p>
+            </div>
+            <div class="state_star">
+                <p>申请完成</p>
+            </div>
+            <div class="state_star">
+                <p>完成情况审批</p>
+            </div>
+            <div class="state_star">
+                <p>文档审批</p>
+            </div>
+            <div class="state_star_last">
+                <p>结项</p>
+            </div>
+        </div>
+
+        <div class="approval_state">
+            <div class="state_active_first_gray">
+                <p>启动</p>
+            </div>
+            <div class="state_star">
+                <p>申请完成</p>
+            </div>
+            <div class="state_star">
+                <p>完成情况审批</p>
+            </div>
+            <div class="state_star">
+                <p>文档审批</p>
+            </div>
+            <div class="state_star_last">
+                <p>结项</p>
+            </div>
+        </div>
+        <div class="approval_state">
+            <div class="state_complete_first">
+                <p>启动</p>
+            </div>
+            <div class="state_star_gray">
+                <p>申请完成</p>
+            </div>
+            <div class="state_star">
+                <p>完成情况审批</p>
+            </div>
+            <div class="state_star">
+                <p>文档审批</p>
+            </div>
+            <div class="state_star_last">
+                <p>结项</p>
+            </div>
+        </div>
+
+
+        <div class="approval_state">
+            <div class="state_complete_first">
+                <p>启动</p>
+            </div>
+            <div class="state_complete">
+                <p>申请完成</p><span>张三</span>
+            </div>
+            <div class="state_active_gray">
+                <p>完成情况审批</p>
+            </div>
+            <div class="state_star">
+                <p>文档审批</p>
+            </div>
+            <div class="state_star_last">
+                <p>结项</p>
+            </div>
+        </div>
+        <div class="approval_state">
+            <div class="state_complete_first">
+                <p>启动</p>
+            </div>
+            <div class="state_complete">
+                <p>申请完成</p><span>pm</span>
+            </div>
+            <div class="state_complete">
+                <p>完成情况审批</p>
+            </div>
+            <div class="state_star_gray">
+                <p>文档审批</p>
+            </div>
+            <div class="state_star_last">
+                <p>结项</p>
+            </div>
+        </div>
+
+
+        <div class="approval_state">
+            <div class="state_complete_first">
+                <p>启动</p>
+            </div>
+            <div class="state_complete">
+                <p>申请完成</p><span>pm</span>
+            </div>
+            <div class="state_complete">
+                <p>完成情况审批</p><span>pm小张</span>
+            </div>
+            <div class="state_complete">
+                <p>文档审批</p>
+            </div>
+            <div class="state_active_last">
+                <p>结项</p>
+            </div>
+        </div>
+        <div class="approval_state">
+            <div class="state_complete_first">
+                <p>启动</p>
+            </div>
+            <div class="state_complete">
+                <p>申请完成</p><span>pm</span>
+            </div>
+            <div class="state_complete">
+                <p>完成情况审批</p><span>pm小张</span>
+            </div>
+            <div class="state_complete">
+                <p>文档审批</p><span>经理</span>
+            </div>
+            <div class="state_complete_last">
+                <p>结项</p>
+            </div>
+        </div>
+
+
+
+        <!--  
+   <div class="approval_state">
+    <div class="state_active_first" title=""><p>启动</p></div>
+    <div class="state_active" title=""> <p>申请完成</p> </div>
+    <div class="state_active" title=""> <p>完成情况审批</p> </div>
+    <div class="state_active" title=""><p>文档审批</p></div>
+    <div class="state_active_last" title=""><p>结项</p></div>   
+  </div>-->
+
+        <!--树形筛选条件 -->
+        <div class="screen-tree">
+            <div class="first-level-screen">
+                <p><i class="fa fa-minus-square-o fa-fw"></i>所有工作</p>
+                <div class="second-level-screen">
+                    <p>状态</p>
+                    <ul>
+                        <li class="selected"><a>未完成</a></li>
+                        <li><a>已完成</a></li>
+                    </ul>
+                </div>
+                <div class="second-level-screen">
+                    <p>时间</p>
+                    <ul>
+                        <li><a>正常</a></li>
+                        <li><a>延期</a></li>
+                    </ul>
+                </div>
+                <div class="second-level-screen">
+                    <p>进度</p>
+                    <ul>
+                        <li><a>本周</a></li>
+                        <li><a>近两周</a></li>
+                        <li><a>本月</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--工时排行榜  -->
+        <div class="rank_list" style="width:300px;">
+            <h3>项目投入工时排行</h3>
+            <ul>
+                <li><span class="top">1</span>
+                    <p>标准产品开发-2018</p>
+                    <i>1000</i>
+                </li>
+                <li><span class="top">2</span>
+                    <p>中信建投定制开发-2017</p>
+                    <i>800</i>
+                </li>
+                <li><span class="top">3</span>
+                    <p>常熟农商银行（四期）</p>
+                    <i>600</i>
+                </li>
+                <li><span>4</span>
+                    <p>武汉朗来科技</p>
+                    <i>300</i>
+                </li>
+                <li><span>5</span>
+                    <p>珠海派诺珠海派诺珠海派诺珠海派诺珠海派诺珠海派诺</p>
+                    <i>100</i>
+                </li>
+            </ul>
+        </div>
+
+        <!--流程审核进度-->
+        <div class="audit_schedule" style="width:300px;">
+            <div class="schedule_list">
+                <div class="schedule_icon"><i class="fa fa-check-circle fa-fw"></i></div>
+                <div class="schedule_content">
+                    <p><b>王经理</b><span>09：00</span><span>10-20</span></p>
+                    <p>提交申请</p>
+                </div>
+            </div>
+            <div class="schedule_list">
+                <div class="schedule_icon"><i class="fa fa-check-circle fa-fw"></i></div>
+                <div class="schedule_content">
+                    <p><b>pm小张</b><span>11：30</span><span>10-23</span></p>
+                    <p>同意</p>
+                </div>
+            </div>
+            <div class="schedule_list schedule_no">
+                <div class="schedule_icon"><i class="fa fa-times-circle fa-fw"></i></div>
+                <div class="schedule_content">
+                    <p><b>部门经理</b><span>14：10</span><span>10-29</span></p>
+                    <p>不同意，缺陷附件<a href="#">回复</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Common_bar组合-->
+        <div class="common_bar summary_info">
+            <div class="left_bar">
+                <div>总人工预算： 40人天</div>
+                <div>计划工时：36天</div>
+                <div>计划人工费：13100元</div>
+                <div>填报工时：13天</div>
+                <div>填报人工费：2612.5元</div>
+                <div>人工执行率：36.11%</div>
+            </div>
+        </div>
+        <div class="common_bar summary_info">
+            <div class="left_bar">
+                <div>预算编制模式：自上而下</div>
+                <div>总费用预算：100000元</div>
+                <div>当前已编制预算：72057 元</div>
+                <div>总费用成本：44453.5 元</div>
+                <div>预算超支：0元</div>
+                <div>预算执行率 ：58.07%</div>
+            </div>
+        </div>
+
+        <!--系统功能模块配置-->
+        <script>
+            $(function () {
+                $(".process_approval a").click(function () {
+                    $(this).parent().toggleClass("process_approval_disabled")
+                })
+            })
+        </script>
+        <div class="sys_functional_module">
+            <h3>系统功能模块配置<span>说明：灰色表示不启用此模板！</span></h3>
+            <div class="sys_function_list">
+                <div class="process_approval"><a href="#"><span>流程审批</span></a></div>
+                <div class="hours_system"><a href="#"><span>工时系统</span></a></div>
+                <div class="demand_management demand_management_disabled"><a href="#"><span>需求管理</span></a></div>
+                <div class="test_management"><a href="#"><span>测试管理</span></a></div>
+                <div class="defect_management"><a href="#"><span>缺陷管理</span></a></div>
+                <div class="audit_management"><a href="#"><span>审计管理</span></a></div>
+                <div class="review_management"><a href="#"><span>评审管理</span></a></div>
+                <div class="agile_development"><a href="#"><span>敏捷开发</span></a></div>
+                <div class="contract_management"><a href="#"><span>合同管理</span></a></div>
+                <div class="supplier_management"><a href="#"><span>供应商管理</span></a></div>
+                <div class="customer_management"><a href="#"><span>客户管理</span></a></div>
+                <div class="assign_work"><a href="#"><span>工作交办</span></a></div>
+                <div class="asset_management"><a href="#"><span>资产管理</span></a></div>
+                <div class="meeting_management"><a href="#"><span>会议管理</span></a></div>
+                <div class="address_list"><a href="#"><span>通讯录</span></a></div>
+                <div class="system_announcement"><a href="#"><span>系统公告</span></a></div>
+                <div class="performance_appraisal"><a href="#"><span>绩效考核</span></a></div>
+                <div class="project_management"><a href="#"><span>项目群管理</span></a></div>
+                <div class="product_management"><a href="#"><span>产品管理</span></a></div>
+                <div class="budgeted_cost"><a href="#"><span>预算成本</span></a></div>
+                <div class="project_forum"><a href="#"><span>项目论坛</span></a></div>
+            </div>
+        </div>
+        <!--搜索页面-->
+        <div class="search_result">
+            <div class="filter_search">
+                <input type="text" name="search" placeholder="项目" />
+                <a class="search_btn" href="#">搜 索</a> </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+            <div class="search_list">
+                <div class="search_header"><a href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>透明件-模具评审分析报告.pptx</a></div>
+                <p><span>文档版本：2.0</span><span>文档大小：25.21 KB</span><span>关键字：</span><span>上传者：gsunis</span><span>上传日期：2017/7/27</span></p>
+                <p><a href="#"><i class="fa fa-search fa-fw"></i>在线阅读</a> <a href="#"><i class="fa fa-download fa-fw"></i>下载文档</a></p>
+                <p>保工作有章可循，围绕<strong>项目</strong>管理、财务管理、人力资源管理、 党建及廉政建设等方面，新增及修订完善了各类管理制度20 佘项，为强化管理和廉洁从业提供了制度遵循，夯实了不敢
+                    腐、不能腐的制度体系，有效克服了管理漏洞和制度死角， </p>
+            </div>
+        </div>
+
+        <!--状态历史记录-->
+        <div class="version_history">
+            <div class="version_list version_selected">
+                <div class="big_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：1.0</h4>
+                        <p>发布日期：2017-2-12</p>
+                        <p><span>开发日期：2017-2-12</span><span>测试日期：2017-2-25</span><span>产品上线：2017-3-2</span></p>
+                        <dl>
+                            <dt>版本说明：</dt>
+                            <dd>撒发送到法拉盛的法拉盛放假拉上的放假拉上就法拉盛剪短发了急啊熟练度附近拉世纪东方拉世纪东方律师代理费就阿里斯顿放假拉上就法拉盛剪短发了撒接待来访爱丽丝看对方了我恩金融街沃金融而去奇偶佛大姐夫偶奇偶群发是点击拉萨记得发拉上积分的拉上发了减肥撒发送到法拉盛的法拉盛放假拉上的放假拉上就法拉盛剪短发了急啊熟练度附近拉世纪东方拉世纪东方律师代理费就阿里斯顿放假拉上就法拉盛剪短发了撒接待来访爱丽丝看对方了我恩金融街沃金融而去奇偶佛大姐夫偶奇偶群发是点击拉萨记得发拉上积分的拉上发了减肥拉开发啦撒发送到法拉盛的法拉盛放假拉上的放假拉上就法拉盛剪短发了急啊熟练度附近拉世纪东方拉世纪东方律师代理费就阿里斯顿放假拉上就法拉盛剪短发了撒接待来访爱丽丝看对方了我恩金融街沃金融而去奇偶佛大姐夫偶奇偶群发是点击拉萨记得发拉上积分的拉上发了减肥拉开发啦撒发送到法拉盛的法拉盛放假拉上的放假拉上就法拉盛剪短发了急啊熟练度附近拉世纪东方拉世纪东方律师代理费就阿里斯顿放假拉上就法拉盛剪短发了撒接待来访爱丽丝看对方了我恩金融街沃金融而去奇偶佛大姐夫偶奇偶群发是点击拉萨记得发拉上积分的拉上发了减肥拉开发啦撒发送到法拉盛的法拉盛放假拉上的放假拉上就法拉盛剪短发了急啊熟练度附近拉世纪东方拉世纪东方律师代理费就阿里斯顿放假拉上就法拉盛剪短发了撒接待来访爱丽丝看对方了我恩金融街沃金融而去奇偶佛大姐夫偶奇偶群发是点击拉萨记得发拉上积分的拉上发了减肥拉开发啦拉开发啦</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="small_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：1.1</h4>
+                        <p>发布日期：2017-3-18</p>
+                        <p><span>开发日期：2017-3-18</span><span>测试日期：2017-3-28</span><span>产品上线：2017-4-6</span></p>
+                        <dl>
+                            <dt>版本说明：</dt>
+                            <dd>欧安抚搜啊发ASO发送发of哦啊佛奥。</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="small_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：1.2</h4>
+                        <p>创建日期：2017-4-15</p>
+                        <p><span>开发日期：2017-4-15</span><span>测试日期：2017-4-25</span><span>产品上线：2017-5-8</span></p>
+                    </div>
+                </div>
+                <div class="small_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：1.3</h4>
+                        <p>发布日期：2017-5-20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="version_list">
+                <div class="big_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：2.0</h4>
+                        <p>发布日期：2017-6-5</p>
+                    </div>
+                </div>
+                <div class="small_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：2.1</h4>
+                        <p>发布日期：2017-7-18</p>
+                    </div>
+                </div>
+            </div>
+            <div class="version_list">
+                <div class="big_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：3.0</h4>
+                        <p>发布日期：2017-7-25</p>
+                    </div>
+                </div>
+                <div class="small_version">
+                    <div class="version_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="version_content">
+                        <h4>版本：3.1</h4>
+                        <p>发布日期：2017-8-8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--评论列表-车联天下客户-->
+        <div class="comment_container">
+            <div class="comment_list">
+                <div class="comment_header"><a href="#" class="comment_date"><i class="fa fa-calendar fa-fw"></i>2017.7.1-2017.7.31</a><a
+                        class="hidden_btn"><i class="fa fa-angle-down fa-fw"></i></a></div>
+                <div class="comment_con">
+                    <h3>项目1</h3>
+                    <ul>
+                        <li><a href="#">项目1内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目1内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目1内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目1内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目1内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目1内容内容内容内容内容内容内容内容内容内容</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comment_list">
+                <div class="comment_header"><a href="#" class="comment_date"><i class="fa fa-calendar fa-fw"></i>2017.6.1-2017.6.30</a><a
+                        class="hidden_btn"><i class="fa fa-angle-down fa-fw"></i></a></div>
+                <div class="comment_con">
+                    <h3>项目2222222222222222222</h3>
+                    <ul>
+                        <li><a href="#">项目2内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目2内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容容内容内容内容容内容内容内容容内容内容内容</a></li>
+                        <li><a href="#">项目2内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目2内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目2内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</a></li>
+                        <li><a href="#">项目2容内容内容内容内容内容内容内容内容内容</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--公告内容页-->
+        <div class="board_detail">
+            <div class="board_header">
+                <h3>文档管理-公共文档-标准版开发文档-功能模块负责人清单已更新，将商务管理调整成由吴魁负责</h3>
+                <p><span><i class="fa fa-user fa-fw"></i>发表人：demo</span><span><i class="fa fa-clock-o fa-fw"></i>发表时间：2017-01-22</span><span><i
+                            class="fa fa-clock-o fa-fw"></i>失效时间：2017-07-22</span><span><i class="fa fa-dashboard fa-fw"></i>公告类型：项目动态</span></p>
+            </div>
+            <div class="board_content">
+                <p><img src="images/test.jpg" width="1636" height="883" alt="" /></p>
+                <p>1、根据流程定制模板。</p>
+                <p>2、周报/月报/会议纪要 定制</p>
+                <p>3、项目状态比较多，界面错乱。</p>
+                <p>4、支持手机，尤其是Android手机的访问，界面不要错乱。</p>
+                <p>5、admin配置，检查是否有出现错误的地方。</p>
+                <p>6、项目模板需要共享全局。（已经支持）</p>
+                <p>1、此软件中提供的文档管理，基本上是基于用户用相关软件编制好后上传的，完全依耐用户的软件配置,这样做在安全和保密性上讲可能有缺陷。而更专业的PDM、PLM等软件是各种文档都在软件中编制修改，文档离开软件不能打开。另此软件的文控功能不太强，对ISO文控管理支持不太好。</p>
+                <p>2、此平台中没有产品数据管理的功能,这项功能对开发人员有比较好的帮助。我认为这是我们的一个潜在需求。一个开发项目会输出一个产品结构(配方或BOM)，此系统只能管理文档级，不提供结构数据管理功能。无法对应此项目配方中的结构，并按产品结构追溯相关原料的取样和TDS和MSDS等。同时还需考虑可为以后的配方输出到ERP系统提供接口。也不能提供基于产品级的工艺管理要求。</p>
+            </div>
+            <div class="visible_content">
+                <h3>可见人员：</h3>
+                <div class="visible_list"> <span>张三，</span> <span>demo，</span> <span>pm经理</span> </div>
+            </div>
+            <div class="visible_content">
+                <h3>可见部门：</h3>
+                <div class="visible_list"> <span>技术部，</span> <span>销售部，</span> <span>设计部</span> </div>
+            </div>
+            <div class="visible_content">
+                <h3>可见角色：</h3>
+                <div class="visible_list"> <span>管理员，</span> <span>总经理，</span> <span>总负责人</span> </div>
+            </div>
+            <div class="visible_content">
+                <h3>可见用户组：</h3>
+                <div class="visible_list"> <span>设计组，</span> <span>开发组，</span> <span>售后组</span> </div>
+            </div>
+            <div class="board_doc">
+                <h3>附件文档</h3>
+                <div class="board_doc_list">
+                    <p>月报.xls <a href="#"><i class="fa fa-search fa-fw"></i></a><a href="#"><i class="fa fa-download fa-fw"></i></a><a
+                            href="#"><i class="fa fa-times fa-fw"></i></a><a href="#"><i class="fa fa-history fa-fw"></i></a></p>
+                    <p>会议纪要.zip <a href="#"><i class="fa fa-search fa-fw"></i></a><a href="#"><i class="fa fa-download fa-fw"></i></a><a
+                            href="#"><i class="fa fa-times fa-fw"></i></a><a href="#"><i class="fa fa-history fa-fw"></i></a></p>
+                    <p>流程定制模板.doc <a href="#"><i class="fa fa-search fa-fw"></i></a><a href="#"><i class="fa fa-download fa-fw"></i></a><a
+                            href="#"><i class="fa fa-times fa-fw"></i></a><a href="#"><i class="fa fa-history fa-fw"></i></a></p>
+                </div>
+            </div>
+
+            <!--多行条-->
+            <div class="mutiple_bar">
+                <div>条件1</div>
+                <div>条件2</div>
+                <div>条件3</div>
+                <div>条件4</div>
+                <div>条件5</div>
+                <div>条件6</div>
+                <div>条件7</div>
+                <div>条件8</div>
+                <div>条件9</div>
+                <div>条件10</div>
+                <div>条件12</div>
+                <div>条件1</div>
+                <div>条件2</div>
+                <div>条件3</div>
+                <div>条件4</div>
+                <div>条件5</div>
+                <div>条件6</div>
+                <div>条件7</div>
+                <div>条件8</div>
+                <div>条件9</div>
+                <div>条件10</div>
+                <div>条件12</div>
+                <div>条件1</div>
+                <div>条件2</div>
+                <div>条件3</div>
+                <div>条件4</div>
+                <div>条件5</div>
+                <div>条件6</div>
+                <div>条件7</div>
+                <div>条件8</div>
+                <div>条件9</div>
+                <div>条件10</div>
+                <div>条件12</div>
+                <div>条件1</div>
+                <div>条件2</div>
+                <div>条件3</div>
+                <div>条件4</div>
+                <div>条件5</div>
+                <div>条件6</div>
+                <div>条件7</div>
+                <div>条件8</div>
+                <div>条件9</div>
+                <div>条件10</div>
+                <div>条件12</div>
+            </div>
+            <div class="filter_search">
+                <input type="text" name="search" placeholder="搜索模块" />
+                <a class="search_btn" href="#">搜 索</a> </div>
+            <br />
+            <br />
+            <br />
+            <!--销售立项审批表格-->
+            <table class="table table_hover table_bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:3%;">#</th>
+                        <th scope="col" style="width:8%;">当前状态</th>
+                        <th scope="col" style="width:10%;">销售项目编号</th>
+                        <th scope="col" style="width:27%;">客户名称</th>
+                        <th scope="col" style="width:8%;">立项日期</th>
+                        <th scope="col" style="width:5%;">会签人</th>
+                        <th scope="col" style="width:5%;">审核人</th>
+                        <th scope="col" style="width:5%;">提交人</th>
+                        <th scope="col" style="width:8%;">提交时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>评审结论</td>
+                        <td>RV2017022401</td>
+                        <td class="text_left"><a href="#">文档评审列表</a></td>
+                        <td>2017-02-24</td>
+                        <td>张小军</td>
+                        <td>pm</td>
+                        <td>张小军</td>
+                        <td>2017-02-24</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>评审结论</td>
+                        <td>RV2016102501</td>
+                        <td class="text_left"><a href="#">设计要文档评审了</a></td>
+                        <td>2017-02-25</td>
+                        <td>张小军</td>
+                        <td>pm</td>
+                        <td>张小军</td>
+                        <td>2017-02-25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>评审结论</td>
+                        <td>RV2016102102</td>
+                        <td class="text_left"><a href="#">需求文档的评审</a></td>
+                        <td>2016-10-21</td>
+                        <td>张小军</td>
+                        <td>总经理</td>
+                        <td>张小军</td>
+                        <td>2016-10-21</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>评审组长审核</td>
+                        <td>RV2016101901</td>
+                        <td class="text_left"><a href="#">需求规格说明书第一次评审</a></td>
+                        <td>2016-10-19</td>
+                        <td>张小军</td>
+                        <td>pm</td>
+                        <td>张小军</td>
+                        <td>2016-10-19</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>评审组长审核</td>
+                        <td>R00016</td>
+                        <td class="text_left"><a href="#">文档评审二</a></td>
+                        <td>2016-10-09</td>
+                        <td>张小军</td>
+                        <td>pm小王</td>
+                        <td>张小军</td>
+                        <td>2016-10-09</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>评审结论</td>
+                        <td>R00012</td>
+                        <td class="text_left"><a href="#">文档评审</a></td>
+                        <td>2016-08-02</td>
+                        <td>张小军</td>
+                        <td>pm</td>
+                        <td>张小军</td>
+                        <td>2016-08-02</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>评审组长审核</td>
+                        <td>R00010</td>
+                        <td class="text_left"><a href="#">可行性分析报告评审</a></td>
+                        <td>2016-05-12</td>
+                        <td>张小军</td>
+                        <td>pm</td>
+                        <td>张小军</td>
+                        <td>2016-05-12</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--自定义报表（统计）-->
+            <!--任务表格-->
+            <table class="table table_hover table_bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:3%;">序号</th>
+                        <th scope="col" style="width:6%;">项目编号</th>
+                        <th scope="col" style="width:21%;">项目名称</th>
+                        <th scope="col" style="width:9%;">规格</th>
+                        <th scope="col" style="width:7%;">项目类型</th>
+                        <th scope="col" style="width:6%;">项目经理</th>
+                        <th scope="col" style="width:10%;">任务名称</th>
+                        <th scope="col" style="width:5%;">2017年</th>
+                        <th scope="col" style="width:5%;">2018年</th>
+                        <th scope="col" style="width:5%;">2019年</th>
+                        <th scope="col" style="width:5%;">2020年</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>123A1</td>
+                        <td><a href="#">项目名称01</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务1</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>123A2</td>
+                        <td><a href="#">项目名称02</a></td>
+                        <td>规格D</td>
+                        <td>项目类型2</td>
+                        <td>总经理</td>
+                        <td>任务2</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>123A3</td>
+                        <td><a href="#">项目名称03</a></td>
+                        <td>规格C</td>
+                        <td>项目类型3</td>
+                        <td>王经理</td>
+                        <td>任务3</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>123A4</td>
+                        <td><a href="#">项目名称04</a></td>
+                        <td>规格D</td>
+                        <td>项目类型2</td>
+                        <td>小李</td>
+                        <td>任务4</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>123A5</td>
+                        <td><a href="#">项目名称05</a></td>
+                        <td>规格D</td>
+                        <td>项目类型3</td>
+                        <td>pm</td>
+                        <td>任务5</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>123A6</td>
+                        <td><a href="#">项目名称06</a></td>
+                        <td>规格B</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>任务6</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>123A7</td>
+                        <td><a href="#">项目名称07</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务7</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>123A8</td>
+                        <td><a href="#">项目名称08</a></td>
+                        <td>规格D</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务8</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>123A9</td>
+                        <td><a href="#">项目名称09</a></td>
+                        <td>规格D</td>
+                        <td>项目类型3</td>
+                        <td>pm,王经理</td>
+                        <td>任务9</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>123A10</td>
+                        <td><a href="#">项目名称10</a></td>
+                        <td>规格A</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>任务10</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>123A11</td>
+                        <td><a href="#">项目名称11</a></td>
+                        <td>规格B</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>任务11</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>123A12</td>
+                        <td><a href="#">项目名称12</a></td>
+                        <td>规格C</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务12</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>123A13</td>
+                        <td><a href="#">项目名称13</a></td>
+                        <td>规格C</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务13</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>123A14</td>
+                        <td><a href="#">项目名称14</a></td>
+                        <td>规格C</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>任务14</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>123A15</td>
+                        <td><a href="#">项目名称15</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm,小李</td>
+                        <td>任务15</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>123A16</td>
+                        <td><a href="#">项目名称16</a></td>
+                        <td>规格C</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>任务16</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>123A17</td>
+                        <td><a href="#">项目名称17</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务17</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>123A18</td>
+                        <td><a href="#">项目名称18</a></td>
+                        <td>规格B</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>任务18</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>123A19</td>
+                        <td><a href="#">项目名称19</a></td>
+                        <td>规格C</td>
+                        <td>项目类型3</td>
+                        <td>pm</td>
+                        <td>任务19</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>123A20</td>
+                        <td><a href="#">项目名称20</a></td>
+                        <td>规格C</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>任务20</td>
+                        <td>10万</td>
+                        <td>20万</td>
+                        <td>30万</td>
+                        <td>40万</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--项目表格-->
+            <table class="table table_hover table_bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:3%;">序号</th>
+                        <th scope="col" style="width:6%;">项目编号</th>
+                        <th scope="col" style="width:21%;">项目名称</th>
+                        <th scope="col" style="width:11%;">规格</th>
+                        <th scope="col" style="width:7%;">项目类型</th>
+                        <th scope="col" style="width:6%;">项目经理</th>
+                        <th scope="col" style="width:10%;">项目启动时间</th>
+                        <th scope="col" style="width:10%;">项目结束时间</th>
+                        <th scope="col" style="width:8%;">周期</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>123A1</td>
+                        <td><a href="#">项目名称01</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-12-01</td>
+                        <td>2017-03-01</td>
+                        <td>4个月</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>123A2</td>
+                        <td><a href="#">项目名称02</a></td>
+                        <td>规格D</td>
+                        <td>项目类型2</td>
+                        <td>总经理</td>
+                        <td>2016-08-06</td>
+                        <td>2017-02-01</td>
+                        <td>6个月</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>123A3</td>
+                        <td><a href="#">项目名称03</a></td>
+                        <td>规格C</td>
+                        <td>项目类型3</td>
+                        <td>王经理</td>
+                        <td>2016-04-01</td>
+                        <td>2016-12-25</td>
+                        <td>8个月</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>123A4</td>
+                        <td><a href="#">项目名称04</a></td>
+                        <td>规格D</td>
+                        <td>项目类型2</td>
+                        <td>小李</td>
+                        <td>2016-01-08</td>
+                        <td>2017-03-08</td>
+                        <td>1年2个月</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>123A5</td>
+                        <td><a href="#">项目名称05</a></td>
+                        <td>规格D</td>
+                        <td>项目类型3</td>
+                        <td>pm</td>
+                        <td>2016-12-01</td>
+                        <td>2017-03-01</td>
+                        <td>4个月</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>123A6</td>
+                        <td><a href="#">项目名称06</a></td>
+                        <td>规格B</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>2016-03-08</td>
+                        <td>2017-03-08</td>
+                        <td>1年</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>123A7</td>
+                        <td><a href="#">项目名称07</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-08-06</td>
+                        <td>2017-02-01</td>
+                        <td>6个月</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>123A8</td>
+                        <td><a href="#">项目名称08</a></td>
+                        <td>规格D</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-12-01</td>
+                        <td>2017-03-01</td>
+                        <td>4个月</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>123A9</td>
+                        <td><a href="#">项目名称09</a></td>
+                        <td>规格D</td>
+                        <td>项目类型3</td>
+                        <td>pm,王经理</td>
+                        <td>2016-01-08</td>
+                        <td>2017-03-08</td>
+                        <td>1年2个月</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>123A10</td>
+                        <td><a href="#">项目名称10</a></td>
+                        <td>规格A</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>2016-12-01</td>
+                        <td>2017-03-01</td>
+                        <td>4个月</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>123A11</td>
+                        <td><a href="#">项目名称11</a></td>
+                        <td>规格B</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>2016-08-06</td>
+                        <td>2017-02-01</td>
+                        <td>6个月</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>123A12</td>
+                        <td><a href="#">项目名称12</a></td>
+                        <td>规格C</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-04-01</td>
+                        <td>2016-12-25</td>
+                        <td>8个月</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>123A13</td>
+                        <td><a href="#">项目名称13</a></td>
+                        <td>规格C</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-01-08</td>
+                        <td>2017-03-08</td>
+                        <td>1年2个月</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>123A14</td>
+                        <td><a href="#">项目名称14</a></td>
+                        <td>规格C</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>2016-04-01</td>
+                        <td>2016-12-25</td>
+                        <td>8个月</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>123A15</td>
+                        <td><a href="#">项目名称15</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm,小李</td>
+                        <td>2016-12-01</td>
+                        <td>2017-03-01</td>
+                        <td>4个月</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>123A16</td>
+                        <td><a href="#">项目名称16</a></td>
+                        <td>规格C</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>2016-04-01</td>
+                        <td>2016-12-25</td>
+                        <td>8个月</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>123A17</td>
+                        <td><a href="#">项目名称17</a></td>
+                        <td>规格A</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-12-01</td>
+                        <td>2017-03-01</td>
+                        <td>4个月</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>123A18</td>
+                        <td><a href="#">项目名称18</a></td>
+                        <td>规格B</td>
+                        <td>项目类型1</td>
+                        <td>pm</td>
+                        <td>2016-04-01</td>
+                        <td>2016-12-25</td>
+                        <td>8个月</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>123A19</td>
+                        <td><a href="#">项目名称19</a></td>
+                        <td>规格C</td>
+                        <td>项目类型3</td>
+                        <td>pm</td>
+                        <td>2016-08-06</td>
+                        <td>2017-02-01</td>
+                        <td>6个月</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>123A20</td>
+                        <td><a href="#">项目名称20</a></td>
+                        <td>规格C</td>
+                        <td>项目类型2</td>
+                        <td>pm</td>
+                        <td>2016-04-01</td>
+                        <td>2016-12-25</td>
+                        <td>8个月</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--设计报表-人员-->
+            <div class="query_container">
+                <h3>查询条件<span><i class="fa fa-minus fa-fw"></i></span></h3>
+                <dl class="query_list">
+                    <dt>统计对象：</dt>
+                    <dd class="statistical_object">
+                        <div> <a href="#">项目</a> </div>
+                        <div> <a href="#">任务</a> </div>
+                        <div class="selected"> <a href="#">人员</a> </div>
+                        <div> <a href="#">缺陷</a> </div>
+                        <div> <a href="#">需求</a> </div>
+                        <div> <a href="#">合同</a> </div>
+                    </dd>
+                </dl>
+                <dl class="query_list">
+                    <dt>统计名称：</dt>
+                    <dd>
+                        <div>
+                            <input type="text" class="input_text_new" style="width:500px" value="人员查询11" />
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="query_list attr_select">
+                    <dt>列属性：</dt>
+                    <dd>
+                        <div>姓名<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>PC版<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>手机版<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>微信<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>部门（角色）<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>直接上级<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>审批上级<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>电话<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>手机<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>Eamil<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>状态<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div><a href="#"><i class="fa fa-plus fa-fw"></i>添加</a></div>
+                    </dd>
+                </dl>
+                <dl class="query_list">
+                    <dt>行条件：</dt>
+                    <dd>
+                        <div>
+                            <select class="input_text_new">
+                                <option>姓名</option>
+                                <option>电话</option>
+                                <option>手机</option>
+                                <option>Eamil</option>
+                                <option>状态</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="input_text_new">
+                                <option>大于</option>
+                                <option>小于</option>
+                                <option>等于</option>
+                                <option selected="selected">包含</option>
+                                <option>不包含</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" class="input_text_new" />
+                        </div>
+                        <div><a href="#"><i class="fa fa-check fa-fw"></i>确定</a></div>
+                    </dd>
+                </dl>
+                <dl class="selected_condition">
+                    <dt>已选条件：</dt>
+                    <dd>
+                        <div>姓名包含<span>总经理 | huhui | zll | pm | CicPM | 国研科技 | sjc </span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>状态等于<span>在职</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                    </dd>
+                    <div class="common_bar" style="margin-top:30px; height:25px;">
+                        <div class="center_bar">
+                            <div><a href="#" class="button_3">确定并保存</a></div>
+                            <div><a href="#" class="button_3">重置条件</a></div>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--设计报表-任务-->
+            <div class="query_container">
+                <h3>查询条件<span><i class="fa fa-minus fa-fw"></i></span></h3>
+                <dl class="query_list">
+                    <dt>统计对象：</dt>
+                    <dd class="statistical_object">
+                        <div> <a href="#">项目</a> </div>
+                        <div class="selected"> <a href="#">任务</a> </div>
+                        <div> <a href="#">人员</a> </div>
+                        <div> <a href="#">缺陷</a> </div>
+                        <div> <a href="#">需求</a> </div>
+                        <div> <a href="#">合同</a> </div>
+                    </dd>
+                </dl>
+                <dl class="query_list">
+                    <dt>统计名称：</dt>
+                    <dd>
+                        <div>
+                            <input type="text" class="input_text_new" style="width:500px" value="按年统计的预算报表" />
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="query_list attr_select">
+                    <dt>列属性：</dt>
+                    <dd>
+                        <div>序号<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目编号<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目名称<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>规格<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目类型<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目经理<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>任务名称<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>2017年<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>2018年<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>2019年<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>2020年<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div><a href="#"><i class="fa fa-plus fa-fw"></i>添加</a></div>
+                    </dd>
+                </dl>
+                <dl class="query_list">
+                    <dt>行条件：</dt>
+                    <dd>
+                        <div>
+                            <select class="input_text_new" style="width:83px;">
+                                <option>任务名称</option>
+                                <option>2017年</option>
+                                <option>工期</option>
+                                <option>计划开始</option>
+                                <option>计划结束</option>
+                                <option>实际开始</option>
+                                <option>实际结束</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="input_text_new">
+                                <option>大于</option>
+                                <option>小于</option>
+                                <option>等于</option>
+                                <option selected="selected">包含</option>
+                                <option>不包含</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" class="input_text_new" />
+                        </div>
+                        <div><a href="#"><i class="fa fa-check fa-fw"></i>确定</a></div>
+                    </dd>
+                </dl>
+                <dl class="selected_condition">
+                    <dt>已选条件：</dt>
+                    <dd>
+                        <div>任务名称包含<span>任务</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>规格包含<span> 规格A | 规格B | 规格C | 规格D</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>2017年=<span>10万</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>2018年=<span>20万</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>2019年=<span>30万</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>2020年=<span>40万</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                    </dd>
+                    <div class="common_bar" style="margin-top:30px; height:25px;">
+                        <div class="center_bar">
+                            <div><a href="#" class="button_3">确定并保存</a></div>
+                            <div><a href="#" class="button_3">重置条件</a></div>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--设计报表-项目-->
+            <div class="query_container">
+                <h3>查询条件<span><i class="fa fa-minus fa-fw"></i></span></h3>
+                <dl class="query_list">
+                    <dt>统计对象：</dt>
+                    <dd class="statistical_object">
+                        <div class="selected"> <a href="#">项目</a> </div>
+                        <div> <a href="#">任务</a> </div>
+                        <div> <a href="#">人员</a> </div>
+                        <div> <a href="#">缺陷</a> </div>
+                        <div> <a href="#">需求</a> </div>
+                        <div> <a href="#">合同</a> </div>
+                    </dd>
+                </dl>
+                <dl class="query_list">
+                    <dt>统计名称：</dt>
+                    <dd>
+                        <div>
+                            <input type="text" class="input_text_new" style="width:500px" value="开发中的项目" />
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="query_list attr_select">
+                    <dt>列属性：</dt>
+                    <dd>
+                        <div>序号<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目编号<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>规格<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目类型<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目经理<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目启动时间<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>项目结束时间<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div>周期<span><i class="fa fa-times fa-fw blue_icon"></i></span></div>
+                        <div><a href="#"><i class="fa fa-plus fa-fw"></i>添加</a></div>
+                    </dd>
+                </dl>
+                <dl class="query_list">
+                    <dt>行条件：</dt>
+                    <dd>
+                        <div>
+                            <select class="input_text_new" style="width:83px;">
+                                <option>项目名称</option>
+                                <option>项目编号</option>
+                                <option>隶属部门</option>
+                                <option>项目类型</option>
+                                <option>项目状态</option>
+                                <option>计划开始</option>
+                                <option>计划结束</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="input_text_new">
+                                <option>大于</option>
+                                <option>小于</option>
+                                <option>等于</option>
+                                <option selected="selected">包含</option>
+                                <option>不包含</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" class="input_text_new" />
+                        </div>
+                        <div><a href="#"><i class="fa fa-check fa-fw"></i>确定</a></div>
+                    </dd>
+                </dl>
+                <dl class="selected_condition">
+                    <dt>已选条件：</dt>
+                    <dd>
+                        <div>项目名称包含<span>项目名称 </span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>项目经理包含<span>pm | 总经理 | 王经理 | 小李 </span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                        <div>周期包含<span>4个月 | 6个月 | 8个月 | 1年 | 1年2个月</span><i class="fa fa-times fa-fw blue_icon"></i></div>
+                    </dd>
+                    <div class="common_bar" style="margin-top:30px; height:25px;">
+                        <div class="center_bar">
+                            <div><a href="#" class="button_3">确定并保存</a></div>
+                            <div><a href="#" class="button_3">重置条件</a></div>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+
+            <!--状态历史记录-->
+            <div class="state_history">
+                <div class="state_list state_selected">
+                    <div class="state_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="state_content">
+                        <h3>标题1</h3>
+                        <p>内容1内容1内容1内容1内容1</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                    </div>
+                </div>
+                <div class="state_list">
+                    <div class="state_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="state_content">
+                        <h3>标题2</h3>
+                        <p>内容1内容1内容1内容1内容1</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                    </div>
+                </div>
+                <div class="state_list">
+                    <div class="state_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="state_content">
+                        <h3>标题3</h3>
+                        <p>内容1内容1内容1内容1内容1</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                    </div>
+                </div>
+                <div class="state_list">
+                    <div class="state_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="state_content">
+                        <h3>标题4</h3>
+                        <p>内容1内容1内容1内容1内容1</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                    </div>
+                </div>
+                <div class="state_list">
+                    <div class="state_icon"><i class="fa fa-circle fa-fw"></i></div>
+                    <div class="state_content">
+                        <h3>标题5</h3>
+                        <p>内容1内容1内容1内容1内容1</p>
+                        <p>内容2内容2内容2内容2内容2内容2内容2</p>
+                        <p>内容3内容3内容3内容3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--打印页面-->
+            <div class="print_page">
+                <div class="print_header">
+                    <h3>文印订单服务确认单</h3>
+                    <p>订单编号：20161226001</p>
+                </div>
+                <table class="print_table" id="tbCustomerEdit">
+                    <tbody>
+                        <tr>
+                            <td class="td_label"> 订单名称： </td>
+                            <td colspan="3"><label>company1-department1.2-B-2016-12-23aaa</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td_label"> 提交人： </td>
+                            <td><label>B</label></td>
+                            <td class="td_label">提交时间：</td>
+                            <td><label>2016-12-20 09:01:24</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td_label">专业公司：</td>
+                            <td><label>company1</label></td>
+                            <td class="td_label">部门：</td>
+                            <td><label>department1.2</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td_label">分机号：</td>
+                            <td><label>123123123123aa</label></td>
+                            <td class="td_label"> 期望完成时间： </td>
+                            <td><label>2016-12-23 10:30:04</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="inner_table" cellpadding="0" cellspacing="0" rules="all" border="1">
+                                    <tbody>
+                                        <tr>
+                                            <th width="25%">文印类型</th>
+                                            <th width="10%">计价单位</th>
+                                            <th width="10%">数量</th>
+                                            <th width="11%">单价</th>
+                                            <th width="11%">调整单价</th>
+                                            <th width="12%">小计</th>
+                                            <th width="25%">备注</th>
+                                        </tr>
+                                        <tr>
+                                            <td>A4纸</td>
+                                            <td>1元/张</td>
+                                            <td>1.00</td>
+                                            <td>3.00</td>
+                                            <td></td>
+                                            <td>3.0000</td>
+                                            <td>123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_label"> 订单总价： </td>
+                            <td colspan="3">3.00 元</td>
+                        </tr>
+                        <tr>
+                            <td class="td_label">补充说明：</td>
+                            <td colspan="3"><label>123123</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td_label">附件文档：</td>
+                            <td colspan="3">副本平安订单系统问题-确认版.xlsx</td>
+                        </tr>
+                        <tr>
+                            <td class="td_label">最终总价：</td>
+                            <td colspan="3"><label>5.00</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td_label">报价说明：</td>
+                            <td colspan="3"><label>沙发沙发的身份</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="print_footer">
+                    <dl>
+                        <dt>文印中心：</dt>
+                        <dd>中心111</dd>
+                    </dl>
+                    <dl>
+                        <dt>操作员：</dt>
+                        <dd>张三</dd>
+                    </dl>
+                    <p>用户签收：</p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--font_icons字体图标使用说明-->
+            <div class="font_icons">
+                <div class="icons_header">
+                    <h2>系统常用字体图标列表与使用规范</h2>
+                    <p>(<a href="http://fontawesome.dashgame.com/#top" target="_blank">点这进入原中文官方网站</a>,大家有什么好的建议也可以反馈给我，后期会不断更新...)</p>
+                </div>
+                <h3><i class="fa fa-star-o fa-fw"></i>使用规范</h3>
+                <div class="font_sysm">
+                    <p>a.字体图标格式：统一用i标签书写（图标和文字之间不要留空格，fa-fw就是表示间接）</p>
+                    <pre>例：&lti class="fa fa-xxx fa-fw"&gt&lt/i&gt + 操作</pre>
+                    <pre>&lti class="fa fa-edit fa-fw"&gt&lt/i&gt 编辑</pre>
+                    <p>b.有a标签或其他标签放在标签内容前面</p>
+                    <pre>例：&lta&gt&lti class="fa fa-xxx fa-fw"&gt&lt/i&gt + 操作&lt/a&gt </pre>
+                    <pre>&lta&gt&lti class="fa fa-comment-o fa-fw"&gt&lt/i&gt发表评论&lt/a&gt </pre>
+                    <p>c.滑块里面的字体图标只需要写fa-xxx其中的xxx字体图标名</p>
+                    <pre>例：icon:"xxxxx" </pre>
+                    <p>d.字体图标颜色写法：xxx_icon放在i标签上或i标签第一父节点标签上</p>
+                    <pre>例：&lti class="fa fa-xxx fa-fw xxx_icon"&gt&lt/i&gt + 操作</pre>
+                    <pre>&lti class="fa fa-remove fa-fw red_icon"&gt&lt/i&gt 删除</pre>
+                    <pre>&lta class="red_icon" &gt&lti class="fa fa-remove fa-fw"&gt&lt/i&gt删除&lt/a&gt </pre>
+                </div>
+                <h3><i class="fa fa-star-o fa-fw"></i>系统常用字体图标列表（字体图标下面是：fa-xxx,xxx_icon）</h3>
+                <ul class="icon_list">
+                    <li><i class="fa fa-edit fa-fw"></i>编辑<span>fa-edit</span></li>
+                    <li><i class="fa fa-upload fa-fw"></i>上传<span>fa-upload</span></li>
+                    <li><i class="fa fa-download fa-fw"></i>下载<span>fa-download</span></li>
+                    <li><i class="fa fa-search fa-fw"></i>阅读/搜索/查询<span>fa-search</span></li>
+                    <li><i class="fa fa-pencil-square fa-fw"></i>评审<span>fa-pencil-square</span></li>
+                    <li><i class="fa fa-save fa-fw"></i>保存<span>fa-save</span></li>
+                    <li><i class="fa fa-calendar fa-fw"></i>填报工时<span>fa-calendar</span></li>
+                    <li><i class="fa fa-file-pdf-o fa-fw"></i>另存为PDF<span>fa-fafile-pdf-o</span></li>
+                    <li><i class="fa fa-sign-out fa-fw"></i>导出/导出纪要<span>fa-sign-out</span></li>
+                    <li><i class="fa fa-mail-reply fa-fw"></i>回复/出库<span>fa-mail-reply</span></li>
+                    <li><i class="fa fa-check fa-fw"></i>通过/完成/已读<span>fa-check</span></li>
+                    <li class="red_icon"><i class="fa fa-remove fa-fw"></i>删除/关闭/不通过<span>fa-remove,red_icon</span></li>
+                    <li><i class="fa fa-check fa-fw"></i>通过<span>fa-check</span></li>
+                    <li class="red_icon"><i class="fa fa-trash-o fa-fw"></i>清除/清空<span>fa-trash-o,red_icon</span></li>
+                    <li><i class="fa fa-arrow-up fa-fw"></i>上移<span>fa-arrow-up</span></li>
+                    <li><i class="fa fa-arrow-down fa-fw"></i>下移<span>fa-arrow-down</span></li>
+                    <li><i class="fa fa-plus fa-fw"></i>添加/新建<span>fa-plus</span></li>
+                    <li><i class="fa fa-step-forward fa-fw"></i>单条插入<span>fa-step-forward</span></li>
+                    <li><i class="fa fa-fast-forward fa-fw"></i>批量插入<span>fa-fast-forward</span></li>
+                    <li><i class="fa fa-gear fa-fw"></i>配置<span>fa-gear</span></li>
+                    <li><i class="fa fa-bug fa-fw"></i>提交缺陷<span>fa-bug</span></li>
+                    <li><i class="fa fa-bar-chart-o fa-fw"></i>统计报表/工作统计<span>fa-bar-chart-o</span></li>
+                    <li><i class="fa fa-paperclip fa-fw"></i>附件<span>fa-paperclip</span></li>
+                    <li><i class="fa fa-link fa-fw"></i>链接/关联<span>fa-link</span></li>
+                    <li><i class="fa fa-unlink fa-fw"></i>取消关联<span>fa-unlink</span></li>
+                    <li><i class="fa fa-sitemap fa-fw"></i>分解任务<span>fa-sitemap</span></li>
+                    <li><i class="fa fa-user fa-fw"></i>调整责任人/转发<span>fa-user</span></li>
+                    <li><i class="fa fa-users fa-fw"></i>用户组/讨论组<span>fa-users</span></li>
+                    <li class="red_icon"><i class="fa fa-circle fa-fw"></i> 亮灯 （红） <span>fa-circle,red_icon</span></li>
+                    <li class="yellow_icon"><i class="fa fa-circle fa-fw"></i> 亮灯 （黄） <span>fa-circle,yellow_icon</span></li>
+                    <li class="green_icon"><i class="fa fa-circle fa-fw"></i> 亮灯 （绿） <span>fa-circle,green_icon</span></li>
+                    <li><i class="fa fa-print fa-fw"></i>打印<span>fa-print</span></li>
+                    <li><i class="fa fa-mobile fa-fw"></i>手机<span>fa-mobile</span></li>
+                    <li><i class="fa fa-phone fa-fw"></i>电话<span>fa-phone</span></li>
+                    <li><i class="fa fa-clock-o fa-fw"></i>时间/会议<span>fa-clock-o</span></li>
+                    <li><i class="fa fa-indent fa-fw"></i>降级<span>fa-indent</span></li>
+                    <li><i class="fa fa-outdent fa-fw"></i>升级<span>fa-outdent</span></li>
+                    <li><i class="fa fa-copy fa-fw"></i>复制<span>fa-copy</span></li>
+                    <li><i class="fa fa-arrow-left fa-fw"></i>返回<span>fa-arrow-left</span></li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i>邮件/通知<span>fa-envelope-o</span></li>
+                    <li><i class="fa fa-clock-o fa-fw"></i>催办<span>fa-clock-o</span></li>
+                    <li><i class="fa fa-comment-o fa-fw"></i>评论/反馈/信息<span>fa-comment-o</span></li>
+                    <li><i class="fa fa-file-image-o fa-fw"></i>流程图<span>fa-file-image-o</span></li>
+                    <li><i class="fa fa-mail-forward fa-fw"></i>转发<span>fa-mail-forward</span></li>
+                    <li><i class="fa fa-star-o fa-fw"></i>标记<span>fa-star-o</span></li>
+                    <li><i class="fa fa-hdd-o fa-fw"></i>备份<span>fa-hdd-o</span></li>
+                    <li><i class="fa fa-table fa-fw"></i>列表/风险矩阵<span>fa-edit</span></li>
+                    <li><i class="fa fa-reorder fa-fw"></i>自定义列<span>fa-reorder</span></li>
+                    <li><i class="fa fa-sign-out fa-fw"></i>导出/离职<span>fa-sign-out</span></li>
+                    <li><i class="fa fa-sign-in fa-fw"></i>导入<span>fa-sign-in</span></li>
+                    <li><i class="fa fa-book fa-fw"></i>月报周报分类<span>fa-book</span></li>
+                    <li><i class="fa fa-send-o fa-fw"></i>发送<span>fa-send-o</span></li>
+                    <li><i class="fa fa-arrows-alt fa-fw"></i>全屏显示<span>fa-arrows-alt</span></li>
+                    <li><i class="fa fa-arrows-v fa-fw"></i>展开故事<span>fa-arrows-v</span></li>
+                    <li><i class="fa fa-chevron-down fa-fw"></i>下拉<span>fa-chevron-down</span></li>
+                    <li><i class="fa fa-chevron-up fa-fw"></i>收缩<span>fa-chevron-up</span></li>
+                    <li><i class="fa fa-refresh fa-fw"></i>刷新/更新<span>fa-refresh</span></li>
+                    <li><i class="fa fa-file-text-o fa-fw"></i>文档<span>fa-file-text-o</span></li>
+                    <li><i class="fa fa-wrench fa-fw"></i>维修<span>fa-wrench</span></li>
+                    <li><i class="fa fa-user-times fa-fw"></i>删除人员<span>fa-user-times</span></li>
+                    <li><i class="fa fa-user-plus fa-fw"></i>添加人员<span>fa-user-plus</span></li>
+                    <li><i class="fa fa-lock fa-fw"></i>密码<span>fa-lock</span></li>
+                    <li><i class="fa fa-retweet fa-fw"></i>工作交接<span>fa-retweet</span></li>
+                    <li><i class="fa fa-check-square-o fa-fw"></i>发布/选中<span>fa-check-square-o</span></li>
+                    <li><i class="fa fa-calendar-check-o fa-fw"></i>日历<span>fa-edit</span></li>
+                    <li><i class="fa fa-calendar-plus-o fa-fw"></i>添加日历<span>fa-calendar-plus-o</span></li>
+                    <li><i class="fa fa-calendar-times-o fa-fw"></i>删除日历<span>fa-edit</span></li>
+                    <li><i class="fa fa-edit fa-fw"></i>编辑<span>fa-edit</span></li>
+                    <li><i class="fa fa-edit fa-fw"></i>编辑<span>fa-edit</span></li>
+                    <li><i class="fa fa-edit fa-fw"></i>编辑<span>fa-edit</span></li>
+                </ul>
+                <ul class="icon_list long_width">
+                    <li><i class="fa fa-exclamation-circle fa-fw"></i>提示<span>fa-exclamation-circle</span></li>
+                    <li><i class="fa fa-angle-double-left fa-fw"></i>上周/上一天<span>fa-angle-double-left</span></li>
+                    <li><i class="fa fa-angle-double-right fa-fw"></i>下周/下一天<span>fa-angle-double-right</span></li>
+                    <li><i class="fa fa-file-word-o fa-fw"></i>导出到Word<span>fa-file-word-o</span></li>
+                    <li><i class="fa fa-file-excel-o fa-fw"></i>导出到Excel<span>fa-file-excel-o</span></li>
+                    <li><i class="fa fa-file-powerpoint-o fa-fw"></i>导出到Powerpoint<span>fa-file-powerpoint-o</span></li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <br />
+            <!--todo_panel-->
+            <div id="todo_panel">
+                <ul class="todo_type">
+                    <li class="selected"><a href="#" class="rw_bg">任务</a><sup>12</sup></li>
+                    <li><a class="lc_bg">流程</a><sup>2</sup></li>
+                    <li><a class="xq_bg">需求</a></li>
+                    <li><a class="wt_bg">问题</a><sup>100</sup></li>
+                    <li><a class="ps_bg">评审</a></li>
+                    <li><a class="hy_bg">会议</a><sup>16</sup></li>
+                    <li><a class="gs_bg">故事</a></li>
+                    <li><a class="cs_bg">测试</a></li>
+                    <li><a class="gz_bg">工作</a><sup>5</sup></li>
+                    <li><a class="sh_bg">审核</a></li>
+                    <li><a class="fx_bg">风险</a><sup>10</sup></li>
+                    <li><a class="qx_bg">缺陷</a></li>
+                    <li><a class="qx1_bg">日常问题</a><sup>30</sup></li>
+                </ul>
+                <ul class="todo_list">
+                    <li class="selected">
+                        <table>
+                            <tr>
+                                <td><img src="images/NewInfo.png" width="16" height="16" alt="" /><a href="#">[任务]技术设计</a></td>
+                                <td>房屋勘测一期项目</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/NewInfo.png" width="16" height="16" alt="" /><a href="#">[任务]项目结案单</a></td>
+                                <td>项目管理系统调研</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/NewInfo.png" width="16" height="16" alt="" /><a href="#">[任务]可行性研究</a></td>
+                                <td>KL PM系统</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[任务]技术设计</a></td>
+                                <td>IT项目管理系统</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[任务]提交项目验收申请</a></td>
+                                <td>房屋勘测一期项目</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[任务]制定项目共利益者协调计划</a></td>
+                                <td>安信证券项目1</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[任务]制定项目资料管理计划</a></td>
+                                <td>KL PM系统</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[任务]项目计划编制和集成</a></td>
+                                <td>项目管理系统调研</td>
+                                <td>16-08-02/16-08-31</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <tr>
+                                <td><img src="images/NewInfo.png" width="16" height="16" alt="" />000004</td>
+                                <td><a href="#"></a>[项目结项流程] 二代支付系统开发</td>
+                                <td>部门审核</td>
+                                <td>pm</td>
+                                <td>HSAE</td>
+                                <td>2016-11-08 10:18:11</td>
+                                <td>pm</td>
+                                <td>2016-11-08 10:18:11</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <div>3</div>
+                    </li>
+                    <li>
+                        <div>4</div>
+                    </li>
+                    <li>
+                        <div>5</div>
+                    </li>
+                    <li>
+                        <div>6</div>
+                    </li>
+                    <li>
+                        <div>7</div>
+                    </li>
+                    <li>
+                        <div>8</div>
+                    </li>
+                    <li>
+                        <div>9</div>
+                    </li>
+                    <li>
+                        <div>10</div>
+                    </li>
+                    <li>
+                        <div>11</div>
+                    </li>
+                    <li>
+                        <div>12</div>
+                    </li>
+                    <li>
+                        <div>13</div>
+                    </li>
+                    <li>
+                        <div>14</div>
+                    </li>
+                    <li>
+                        <div>15</div>
+                    </li>
+                    <li>
+                        <div>16</div>
+                    </li>
+                </ul>
+                <div class="todo_switch"> <a href="#" class="selected">待办</a> <a href="#">关注</a> </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <!--drop_down-->
+            <div class="drop_down"> <a class="dropdown_btn">导入导出<i class="fa fa-caret-down fa-fw"></i></a>
+                <ul class="dropdown_list" style="width:120px;">
+                    <li><a href="#"><i class="fa fa-level-down fa-fw"></i>导入Excel</a></li>
+                    <li><a href="#"><i class="fa fa-level-up fa-fw"></i>导出Excel</a></li>
+                    <li><a href="#"><i class="fa fa-download fa-fw"></i>复旦奥拉夫夫</a></li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <br />
+            <!--pull_down-->
+            <div class="pull_down"> <a>导入导出<i class="fa fa-caret-down fa-fw"></i></a>
+                <ul class="pulldown_list">
+                    <li><a href="#">取消寄件</a></li>
+                    <li><a href="#">确定修改运单</a></li>
+                    <li><a href="#">打印运单</a></li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <br />
+            <!--feedbackback-->
+            <div class="feedback_info">
+                <div class="feedback_list">
+                    <div class="feedback_icon"><i class="fa fa-info-circle fa-fw"></i></div>
+                    <div class="feedback_content">
+                        <h2><a href="#">一般而言在业务部门眼里看，体系外审更有价值，而且流程管理有流程文件的模板，而体系文件有其另外的模板，那么怎样提高流程管理部门在公司组织体系中的价值和地位呢？又怎样有效的将质量体系文档管理和流程管理有效的整合呢？</a></h2>
+                        <div class="feedback_overhead">
+                            <p> <span>任务进度：10%</span> <span>pm经理，2016-8-5 15:07:30</span> <span>11评论</span> <a href="#"><i
+                                        class="fa fa-comments-o fa-fw"></i>评论</a> </p>
+                            <div class="feedback_comment comment_caret">
+                                <div class="comment_list">
+                                    <p><a href="#">pm小张</a><span>2016-10-10 10:30:10</span><a href="#"><i class="fa fa-reply fa-fw"></i>回复</a></p>
+                                    <h3>体系管理不是片面的追求审核结果。不是简单为了达到内审、外审的要求。更不是简单的建立一大推的程序。体系管理更应该关注体系的有效性、关注体系的持续改进。从这个角度讲，体系管理与流程化的管理目标是一致的。
+                                    </h3>
+                                    <div class="reply_content">
+                                        <input type="text" class="input_text_new" placeholder="写下你的评论..." />
+                                        <div class="reply_btn">
+                                            <button class="cancel_btn">取消</button>
+                                            <button class="comment_btn">评论</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment_list">
+                                    <p><a href="#">pm经理</a><span>回复</span><a href="#">pm小张</a><span>2016-10-11 18:25:16</span><a
+                                            href="#"><i class="fa fa-reply fa-fw"></i>回复</a></p>
+                                    <h3>恩恩！</h3>
+                                </div>
+                                <div class="comment_list">
+                                    <p><a href="#">饭饭</a><span>2016-10-11 11:45:12</span><a href="#"><i class="fa fa-reply fa-fw"></i>回复</a></p>
+                                    <h3>我的理解应该是在流程设计过程中同时考虑满足质量体系（内外审）或其他内控体系的的要求</h3>
+                                </div>
+                                <div class="comment_list">
+                                    <p><a href="#">小李</a><span>2016-10-12 9:02:10</span><a href="#"><i class="fa fa-reply fa-fw"></i>回复</a></p>
+                                    <h3>拿着体系管理的钱，干着流程管理的活。反之亦然</h3>
+                                </div>
+                                <div class="commont_input">
+                                    <div class="reply_content">
+                                        <input type="text" class="input_text_new" placeholder="写下你的评论..." />
+                                        <div class="reply_btn">
+                                            <button class="cancel_btn">取消</button>
+                                            <button class="comment_btn">评论</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_list">
+                    <div class="feedback_icon"><i class="fa fa-info-circle fa-fw"></i></div>
+                    <div class="feedback_content">
+                        <h2><a href="#">对于互联网产品团队，什么样的用户反馈需要关注？如何判断反馈中的噪音？</a></h2>
+                        <div class="feedback_overhead"> <span>任务进度：50%</span> <span>Landy，2016-11-1 11:00:15</span>
+                            <span>5评论</span> <a href="#"><i class="fa fa-comments-o fa-fw"></i>评论</a> </div>
+                    </div>
+                </div>
+                <div class="feedback_list">
+                    <div class="feedback_icon"><i class="fa fa-info-circle fa-fw"></i></div>
+                    <div class="feedback_content">
+                        <h2><a href="#">互联网产品上线后，应如何对待用户的反馈？</a></h2>
+                        <div class="feedback_overhead"> <span>任务进度：80%</span> <span>Andy，2016-8-25 13:30:50</span>
+                            <span>20评论</span> <a href="#"><i class="fa fa-comments-o fa-fw"></i>评论</a> </div>
+                    </div>
+                </div>
+                <div class="feedback_list">
+                    <div class="feedback_icon"><i class="fa fa-info-circle fa-fw"></i></div>
+                    <div class="feedback_content">
+                        <h2><a href="#">产品经理如何避免出现「豆邮」反复改名这样的问题？</a></h2>
+                        <div class="feedback_overhead"> <span>任务进度：40%</span> <span>apriawen，2016-5-15 14:20:15</span>
+                            <span>15评论</span> <a href="#"><i class="fa fa-comments-o fa-fw"></i>评论</a> </div>
+                    </div>
+                </div>
+                <div class="feedback_list">
+                    <div class="feedback_icon"><i class="fa fa-info-circle fa-fw"></i></div>
+                    <div class="feedback_content">
+                        <h2><a href="#">做软件质量管理需要方面的知识，度量要如何开展?</a></h2>
+                        <div class="feedback_overhead"> <span>任务进度：50%</span> <span>Eddga，2016-3-20 10:00:01</span>
+                            <span>5评论</span> <a href="#"><i class="fa fa-comments-o fa-fw"></i>评论</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+</body>
+
+</html>
